@@ -9,10 +9,10 @@ import { pulse } from 'react-animations';
 const Pulse = styled.div`animation: 5s ${keyframes`${pulse}`} infinite`;
 
 const reviews = [
-    {image: images.iqsf, name: "IQSF", reviewText: "Review rext rext lorem ipsudolar"},
-    {image: images.sajal, name: "Sajal", reviewText: "Review rext rext lorem ipsudolar"},
-    {image: images.ramsha, name: "Ramsha", reviewText: "Review rext rext lorem ipsudolar"},
-    {image: images.mawra, name: "Mawra", reviewText: "Review rext rext lorem ipsudolar"},
+    {image: images.iqsf, name: "Pingu", reviewText: "I'm always impressed with the food quality at this restaurant. The ambiance is cozy, and the staff is incredibly attentive. It's my favorite place for a special dinner!"},
+    {image: images.sajal, name: "Pinga", reviewText: "The restaurant's website is very intuitive and easy to navigate. I love how they present the menu and information about reservations. They make it so easy to plan a visit"},
+    {image: images.ramsha, name: "Ramsés", reviewText: "I've had the pleasure of collaborating with the kitchen team at this restaurant, and I must say they are at the forefront in culinary techniques and creativity. It's inspiring to see their passion for gastronomy"},
+    {image: images.mawra, name: "Juan", reviewText: "The staff at this restaurant demonstrates exceptional professionalism. They are always willing to make recommendations and explain dishes with enthusiasm and knowledge. A top-notch culinary experience!"},
 ]
 
 const ReviewCard = ({props}) => {

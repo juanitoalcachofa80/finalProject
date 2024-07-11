@@ -42,7 +42,6 @@ const DateSelector = (props) => {
         Else we are closed
     */
     const hour = new Date().toTimeString().split(' ')[0].split(':');
-    // console.log(parseInt(hour[0]))
     
     const startingTime = 8; // 8 AM
     const closoingTime = 21; // 9 PM

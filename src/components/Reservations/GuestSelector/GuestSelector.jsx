@@ -44,7 +44,7 @@ const GuestSelector = ({ chooseGuest }) => {
     return (
         <div className='app__reservation-guest'>
 
-            <h1 className='guest-title'>Guest</h1>
+            <h1 className='guest-title' id="guestJump">Guest</h1>
 
             <div className='app__reservation-guest-counter-box'>
 

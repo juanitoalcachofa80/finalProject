@@ -75,7 +75,6 @@ function App() {
             </>
           } />
 
-          {/* Path for booking confirmation */}
           <Route path='/ConfirmedBooking' element={<ConfirmedBooking />} />
 
         </Routes>

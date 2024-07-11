@@ -4,7 +4,7 @@ import MarioandAdrianA from '../assets/MarioandAdrianA.jpg';
         title: "Reserve",
         location: "A Table",
         description: "Reserve your table at Little Lemon with ease through our user-friendly online booking system. Simply visit our website to book your dining experience today.",
-        btnname: "Book Table",
+        btnname: <a href="#guestJump" style={{color: '#495E57', textDecoration: 'none'}}>Book Table</a>,
         image: MarioandAdrianA
     }
 

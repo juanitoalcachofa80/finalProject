@@ -4,7 +4,7 @@ import {AppWrap} from '../../wrapper';
 import { images } from "../../constants";
 
 const doormatNavigation = ["Home", "About", "Menu", "Reservations", "Order Online", "Login"];
-const contact = ["Adress", "phone number", "email"];
+const contact = ["Address", "phone number", "email"];
 const socialMedia = ["Facebook", "Instagram", "Twitter", "Youtube"];
 
 const FooterItems = (props) => {

@@ -9,25 +9,25 @@ import { MdDeliveryDining } from 'react-icons/md';
 const foodItems = [
     {
         name: 'Greek Salad', 
-        price: "$12.99", 
+        price: "$15.99", 
         description: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
         image: images.greekSalad,
     }, 
     {
         name: "Bruchetta",
-        price: "$5.99",
+        price: "$8.99",
         description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. ",
         image: images.bruchetta,
     }, 
     {
         name: "Lemon Dessert",
-        price: "$5.00",
+        price: "$3.00",
         description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
         image : images.lemonDessert,
     },
     {
         name: "New Recipie",
-        price: "$5.00",
+        price: "$2.00",
         description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
         image : images.lemonDessert,
     },
@@ -40,7 +40,6 @@ return (
             <div
                 className="app__spcecials-image"
                 style={{backgroundImage: `url(${props.image})`}}>
-                {/* <img className="" src={props.image} alt={props.name} /> */}
             </div>
           <div className="app_specials-details">
             <div className="app__specials-name-price">
@@ -50,7 +49,6 @@ return (
             <p className="app_specials-description">{props.description}</p>
             <button className="app__specials-order">
                  Order
-                 {/* <button>Bike Icon</button>  */}
                  <MdDeliveryDining className="app_specials-delivery" />
              </button>
           </div>

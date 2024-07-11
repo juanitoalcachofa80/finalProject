@@ -8,7 +8,6 @@ export default function Main() {
 
     return (
     <>
-    {/* <Header data = { data.type } /> */}
     <main>
         <Specials />
         <Testimonials />
