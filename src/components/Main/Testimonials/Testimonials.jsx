@@ -37,7 +37,6 @@ const Testimonials = () => {
     return (
         <div className="app__testimonials-content">
             <h1 className="app__testimonals-title">Testimonials</h1>
-            {/* <ReviewCard /> */}
             <div className="app__testimonial-review-card">
                 {
                     reviews.map((review) => {

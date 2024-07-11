@@ -1,10 +1,10 @@
 import images from "./images";
   
   const OrderOnline = {
-        title: `UNDER CONSTRUCTION`,
+        title: `COMING SOON`,
         location: "",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tempora deleniti eum repellat explicabo ratione quisquam fugiat quidem..",
-        btnname: "Order",
+        description: "Please bear with us as we enhance our website. A new feature is coming soon, and we can’t wait to share it with you!",
+        btnname: "Please, wait",
         image: images.underConstruction
     }
 

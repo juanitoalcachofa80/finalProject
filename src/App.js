@@ -1,88 +1,88 @@
 import './App.css';
 import { useState, useEffect, React } from 'react';
 import { Navbar, Header, Main, Footer, Reservations, OrderOnline } from './components';
-import {Routes, Route, useLocation  } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import { headerData, reservationData, orderOnline } from './constants';
 import DataContext from './DataContext';
 import ConfirmedBooking from './components/Reservations/ConfirmedBooking';
 
 function App() {
-// use state to set data
-// use effect to get path
+  // use state to set data
+  // use effect to get path
   const location = useLocation();
   const [path, setPath] = useState(location.pathname);
 
   // set path name on route change
-  useEffect(()=> {
+  useEffect(() => {
     setPath(location.pathname);
   }, [location.pathname]);
 
 
-    // Send data to header to based on route
-    let data = {};
-    if(path === '/' || path === '/Little-Lemon') {
+  // Send data to header to based on route
+  let data = {};
+  if (path === '/' || path === '/Little-Lemon') {
 
-      data = headerData;
+    data = headerData;
 
-    } else if (path === '/Reservations') {
+  } else if (path === '/Reservations') {
 
-      data = reservationData;
+    data = reservationData;
 
-    } else if (path === '/OrderOnline') {
+  } else if (path === '/OrderOnline') {
 
-      data = orderOnline;
+    data = orderOnline;
 
-    }
+  }
 
-    
+
   return (
-      <>
-      
-          <Navbar />
-            <DataContext.Provider value={data}>
-                <Routes>
-                  <Route path='/Little-Lemon' element ={ 
-                    <>
+    <>
 
-                      <Header />
-                      <Main />
+      <Navbar />
+      <DataContext.Provider value={data}>
+        <Routes>
+          <Route path='/Little-Lemon' element={
+            <>
 
-
-                    </>
-                  } />                  
-                  <Route path='/' element ={ 
-                    <>
-
-                      <Header />
-                      <Main />
+              <Header />
+              <Main />
 
 
-                    </>
-                  } />
-                  <Route path='/Reservations' element={
-                    <>
+            </>
+          } />
+          <Route path='/' element={
+            <>
 
-                      <Header />
-                      <Reservations />
+              <Header />
+              <Main />
 
-                        
-                    </>
-                  } />
-                  <Route path='/OrderOnline' element={
-                    <>
-                      <Header />
-                      <OrderOnline />  
-                    </>
-                  } />                  
 
-                  {/* Path for booking confirmation */}
-                  <Route path='/ConfirmedBooking' element={<ConfirmedBooking/>}/>
+            </>
+          } />
+          <Route path='/Reservations' element={
+            <>
 
-                </Routes>
-            </DataContext.Provider>
-          <Footer />
+              <Header />
+              <Reservations />
 
-      </>
+
+            </>
+          } />
+          <Route path='/OrderOnline' element={
+            <>
+              <Header />
+              <OrderOnline />
+            </>
+          } />
+
+          {/* Path for booking confirmation */}
+          <Route path='/ConfirmedBooking' element={<ConfirmedBooking />} />
+
+        </Routes>
+      </DataContext.Provider>
+      <Footer />
+
+    </>
   );
 }
 

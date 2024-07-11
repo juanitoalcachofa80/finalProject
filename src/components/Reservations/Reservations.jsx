@@ -14,7 +14,6 @@ const updateTimeSlots = (availableTimeSlots, date) => {
 }
 
 const initTimeSlots = (initAvaliableTimeSlots) => {
-    // return [...initAvaliableTimeSlots, ...fetchAPI(new Date())];
     return {
         morning: [...initAvaliableTimeSlots.morning, ...fetchAPI(new Date()).morning], 
         afternoon: [...initAvaliableTimeSlots.afternoon, ...fetchAPI(new Date()).afternoon], 
@@ -24,7 +23,6 @@ const initTimeSlots = (initAvaliableTimeSlots) => {
 
 const Reservations = () => {
 
-  // Reducer hook which will update the available time slots and initialize the available time slots
    const [
     availableTimeSlots, 
     dispatchTimeslotsOnDateChange
@@ -32,7 +30,6 @@ const Reservations = () => {
 
   const navigate = useNavigate();
 
-  // Handler Function to submit the reservation data to the server
   const submitReservation = (reservation) => {
     console.log("Reservation From Data: ", reservation);
     const response = submitAPI(reservation);
@@ -42,7 +39,6 @@ const Reservations = () => {
 
 
     if (response) {
-      // alert("Data Submitted Successfully");
       navigate(confrimPageMap.get("confirmedBooking").path);
     } else {
       alert("Data Submission Failed");

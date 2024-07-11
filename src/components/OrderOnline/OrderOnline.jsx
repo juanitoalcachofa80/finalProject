@@ -5,7 +5,7 @@ import { images } from '../../constants';
 function OrderOnline() {
   return (
     <div className='app__order-online'>
-        <h1>Under Construction...</h1>
+        <h1>We're working on adding this section</h1>
     </div>
   )
 }

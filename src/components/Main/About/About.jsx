@@ -5,12 +5,9 @@ import { images } from "../../../constants";
 
 const aboutData = {
     title: "Little Lemon",
-    subTitle: "Chicago",
+    subTitle: "New York",
     description: 
-    `Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-    Velit officia consequat duis enim velit mollit.
-    Exercitation veniam consequat sunt nostrud amet.Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. 
-    Velit officia enim velit mollit. `,
+    `At Little Lemon, our mission is to provide an unforgettable dining experience with our unique blend of culinary excellence and warm hospitality`,
     image1: images.MarioandAdrianA,
     image2: images.resturantChefB,
 };
@@ -34,7 +31,6 @@ const About = () => {
                     </p>
                 </div>
            
-            {/* <div className="app__about-image-box-section"> */}
                 <div className="app__about-image-holder">
                         <div className="app__about-image-box img-box-1"
                             style= 
@@ -53,7 +49,6 @@ const About = () => {
                             } 
                         />
                 </div>
-            {/* </div> */}
 
         </div>
     );

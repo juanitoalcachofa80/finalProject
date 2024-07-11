@@ -2,9 +2,8 @@ import resturantFood from '../assets/restauranfood.jpg';
   
   const headerData = {
         title: "Little Lemon",
-        location: "Chicago",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tempora deleniti eum repellat explicabo ratione quisquam fugiat quidem. Tempora eius deserunt corrupti esse nemo earum, a doloremque minus molestias! Quia.",
-        btnname: "Reserve a Table",
+        location: "New York",
+        description: "At Little Lemon, our mission is to provide an unforgettable dining experience with our unique blend of culinary excellence and warm hospitality",
         image: resturantFood
     }
 

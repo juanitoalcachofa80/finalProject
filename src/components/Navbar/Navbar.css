@@ -59,7 +59,7 @@
     transition: all 0.3s ease-in-out;
 }
 .link:hover {
-    color: gray;
+    color: darkblue;
 }
 .app__navbar-menu {
     width: 35px;

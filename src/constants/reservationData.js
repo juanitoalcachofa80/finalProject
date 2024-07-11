@@ -3,8 +3,8 @@ import MarioandAdrianA from '../assets/MarioandAdrianA.jpg';
   const reservationData = {
         title: "Reserve",
         location: "A Table",
-        description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab tempora deleniti eum repellat explicabo ratione quisquam fugiat quidem..",
-        btnname: "Find Table",
+        description: "Reserve your table at Little Lemon with ease through our user-friendly online booking system. Simply visit our website to book your dining experience today.",
+        btnname: "Book Table",
         image: MarioandAdrianA
     }
 
